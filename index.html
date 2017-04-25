@@ -1,0 +1,118 @@
+<html>
+    <head>
+        <title></title>
+
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="assets/bootstrap-4.0.0-alpha.6-dist/css/bootstrap.css">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="assets/bootstrap-4.0.0-alpha.6-dist/js/bootstrap.min.js"></script>
+
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
+
+        <link rel="stylesheet" href="layout.css">
+        <script src="js/main.js"></script>
+
+
+    </head>
+
+    <body>
+
+        <form id="enviarResposta" method="POST">
+
+            <input type="hidden" name="alternativaSelecionada" id="alternativaSelecionada" />
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-lg-10 offset-lg-1">
+
+                        <div class="container-fluid pergunta">
+
+                            <div class="row d-flex">
+
+                                <div class="col-lg-3  ">
+                                    <img src="imagens/bruno.png" class="" />
+                                </div>
+
+                                <div class="col-lg-9 ">
+                                    <h1>Show do Brunão</h1>
+                                    <p>Quem é pericles?</p>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                        <div data-alternativa="A" class="container-fluid resposta">
+                            <p>A - Esquenta</p>
+                        </div>
+
+                        <div data-alternativa="B" class="container-fluid resposta">
+                            <p>B - As tias dela sabem</p>
+                        </div>
+
+                        <div data-alternativa="C" class="container-fluid resposta">
+                            <p>C - As tias dela sabem</p>
+                        </div>
+
+                        <div data-alternativa="D" class="container-fluid resposta">
+                            <p>D - As tias dela sabem</p>
+                        </div>
+
+                        <div data-alternativa="E" class="container-fluid resposta">
+                            <p>E - As tias dela sabem</p>
+                        </div>
+
+                        <div class="container-fluid">
+
+                            <div id="botaoResponder" class="col-lg-4 offset-lg-4">
+                                <p>Responder</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="modal fade" id="modalConfirmacao" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <img src="imagens/bruno_duvida.jpg" class="img-thumbnail">
+                    <p class="frase-confirmacao">Tem Certeza disso?</p>
+
+                    
+                  </div>
+                  <div class="modal-footer">
+
+                        <button type="button" class="botao-resposta btn botao-resposta-nao" data-dismiss="modal">Não</button>
+                        <button type="button" id="enviarFormulario" class="botao-resposta btn botao-resposta-sim">Sim</button>
+
+                        
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+        </form>
+
+
+    </body>
+
+</html>
