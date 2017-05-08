@@ -3,6 +3,7 @@ body
 {
 	background-color: #1E90FF;
 	background-image: url("imagens/background.jpg");
+        background-position: center center;
 	color: #fff;
 	font-family: 'Lobster', cursive;
 }
@@ -12,7 +13,7 @@ body
 	margin-top: 40px;
 	border: #fff solid 5px;
 	padding: 10px;
-	background-color: rgba(120, 20, 20, 0.8);
+	background-color: rgba(120, 20, 20, 0.9);
 }
 
 .pergunta h1
@@ -36,7 +37,7 @@ body
 	text-align: left;
 	border: #fff solid 5px;
 	padding: 10px 30px;
-	background-color: rgba(20, 20, 20, 0.8);
+	background-color: rgba(20, 20, 20, 0.9);
 	cursor: pointer;
 
 }
@@ -48,17 +49,19 @@ body
 
 .resposta-selecionada
 {
-	background-color: rgba(20, 220, 20, 0.8);
+	background-color: rgba(20, 220, 20, 0.9);
 }
 
 #botaoResponder
 {
-	margin-top: 10px;
-	border: #fff solid 5px;
-	padding: 5px 5px;
-	text-align: center;
-	background-color: rgba(120, 20, 20, 0.8);
-	cursor: pointer;
+    color:white;
+    margin-top: 10px;
+    border: #fff solid 5px;
+    padding: 5px 5px;
+    text-align: center;
+    background-color: rgba(120, 20, 20, 0.9);
+    cursor: pointer;
+    font-family: 'Lobster', cursive;
 }
 
 #botaoResponder p
@@ -95,4 +98,39 @@ body
 .botao-resposta-nao
 {
 	background-color: #c22;	
+}
+
+#login
+{
+    width:600px;
+    padding: 10px;
+    position:absolute;
+    margin-top:-125px;
+    margin-left:-300px;
+    top:50%;
+    left:50%;
+    
+    font-size: 32px;
+    text-align: center;
+    border: #fff solid 5px;
+    padding: 10px 30px;
+    background-color: rgba(20, 20, 20, 0.9);
+    
+}
+
+#ranking
+{
+    width:600px;
+    padding: 10px;
+    position:absolute;
+    margin-left:-300px;
+    top:10%;
+    left:50%;
+    
+    font-size: 32px;
+    text-align: center;
+    border: #fff solid 5px;
+    padding: 10px 30px;
+    background-color: rgba(20, 20, 20, 0.9);
+    
 }
