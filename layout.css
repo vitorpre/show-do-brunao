@@ -2,10 +2,15 @@
 body
 {
 	background-color: #1E90FF;
-	background-image: url("imagens/background.jpg");
+	background-image: url("imagens/background3.jpg");
         background-position: center center;
 	color: #fff;
 	font-family: 'Lobster', cursive;
+}
+
+.imagem-logo
+{
+    width: 100%;
 }
 
 .pergunta
@@ -18,7 +23,7 @@ body
 
 .pergunta h1
 {
-	font-size: 56px;
+	font-size: 50px;
 	text-align: center;
 	margin-bottom: 20px;
 }
@@ -32,11 +37,11 @@ body
 
 .resposta
 {
-	margin-top: 10px;
-	font-size: 30px;
+	margin-top: 8px;
+	font-size: 25px;
 	text-align: left;
 	border: #fff solid 5px;
-	padding: 10px 30px;
+	padding: 5px 30px;
 	background-color: rgba(20, 20, 20, 0.9);
 	cursor: pointer;
 

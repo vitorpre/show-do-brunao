@@ -13,8 +13,6 @@
     
     $objPergunta = PerguntaDAO::getPerguntaById($con, (int)$_SESSION["idPerguntaAtual"]);
         
-    print_r($_SESSION);
-
 ?>
 
 <html>
@@ -33,6 +31,7 @@
 
         <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 
+        <script src="js/konami.js"></script>
 
         <link rel="stylesheet" href="layout.css">
         <script src="js/main.js"></script>
@@ -57,7 +56,7 @@
                             <div class="row d-flex">
 
                                 <div class="col-lg-3  ">
-                                    <img src="imagens/bruno.png" class="" />
+                                    <img class="img-thumbnail" src="imagens/bruno_logo2.jpg" class="" />
                                 </div>
 
                                 <div class="col-lg-9 ">
@@ -110,7 +109,7 @@
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
                   <div class="modal-body">
-                    <img src="imagens/bruno_duvida.jpg" class="img-thumbnail">
+                    <img src="imagens/bruno_pensativo.jpg" class="img-thumbnail">
                     <p class="frase-confirmacao">Tem Certeza disso?</p>
 
                     
@@ -121,6 +120,19 @@
                         <button type="button" id="enviarFormulario" class="botao-resposta btn botao-resposta-sim">Sim</button>
 
                         
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            
+            <div class="modal fade" id="modalEasterEgg" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <img src="imagens/easter_egg.jpg" class="img-thumbnail">                    
+                  </div>
+                  <div class="modal-footer">
                   </div>
                 </div>
               </div>

@@ -69,6 +69,8 @@ $(document).ready(function(){
 
 	});
 
+        var easter_egg = new Konami(function() { $('#modalEasterEgg').modal('show');});
+
 	
 
 

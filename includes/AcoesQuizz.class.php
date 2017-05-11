@@ -26,9 +26,11 @@ class AcoesQuizz
         $objJogador->setNome($_SESSION["nomeJogador"]);
         $objJogador->setPontuacao($_SESSION["pontuacao"]);
 
+        self::resetarJogo();
+        
         JogadorDAO::salvar($con, $objJogador);
         
-        self::resetarJogo();
+        
     }
     
     public static function resetarJogo()
