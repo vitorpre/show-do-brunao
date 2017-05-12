@@ -44,12 +44,17 @@ class AcoesQuizz
     
     public static function inserirRespostaPeguntaAtual($con, $alternativaSelecionada)
     {
+        $acertouPergunta = false;
+        
         $objPergunta = PerguntaDAO::getPerguntaById($con, (int)$_SESSION["idPerguntaAtual"]);
         
         if($objPergunta->getAlternativaCorreta() === $alternativaSelecionada)
         {
+            $acertouPergunta = true;
             $_SESSION["pontuacao"] += 1;
         }
+        
+        return $acertouPergunta;
     }
     
 }

@@ -31,8 +31,6 @@
 
         <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 
-        <script src="js/konami.js"></script>
-
         <link rel="stylesheet" href="layout.css">
         <script src="js/main.js"></script>
 
@@ -56,12 +54,12 @@
                             <div class="row d-flex">
 
                                 <div class="col-lg-3  ">
-                                    <img class="img-thumbnail" src="imagens/bruno_logo2.jpg" class="" />
+                                    <img class="img-thumbnail" src="imagens/bruno_logo.jpg" class="" />
                                 </div>
 
                                 <div class="col-lg-9 ">
                                     <h1>Show do Brunão</h1>
-                                    <p><?= $objPergunta->getDescricaoPergunta(); ?></p>
+                                    <p><?= $_SESSION["qtdJaPerguntado"] . " - " . $objPergunta->getDescricaoPergunta(); ?></p>
                                 </div>
 
 
@@ -89,6 +87,8 @@
                         <div data-alternativa="E" class="container-fluid resposta">
                             <p>E - <?= $objPergunta->getAlternativaE(); ?></p>
                         </div>
+                        
+                        <br>
 
                         <div class="container-fluid">
 
@@ -124,25 +124,8 @@
                 </div>
               </div>
             </div>
-            
-            
-            <div class="modal fade" id="modalEasterEgg" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-body">
-                    <img src="imagens/easter_egg.jpg" class="img-thumbnail">                    
-                  </div>
-                  <div class="modal-footer">
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-
 
         </form>
-
 
     </body>
 

@@ -74,8 +74,6 @@ class PerguntaDAO
         
         $objStatement = $conexao->prepare("SELECT * FROM pergunta WHERE idPergunta NOT IN (" . implode(",",$arrIdsJaUsados) . ") ORDER BY RAND() LIMIT 1");
         
-        print_r($objStatement->debugDumpParams());
-        
         if ($objStatement->execute())
         {
             $row = $objStatement->fetch();

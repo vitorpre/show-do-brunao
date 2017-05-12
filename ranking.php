@@ -15,6 +15,9 @@
     
     $arrMelhoresJogadores = JogadorDAO::getMelhoresJogadores($con, 10);
     
+    $jogador = filter_input(INPUT_GET, "jogador");
+    $pontuacao = filter_input(INPUT_GET, "pontuacao");    
+    
 ?>
 
 <html>
@@ -44,6 +47,12 @@
         
 
         <div id="ranking" class="container-fluid">
+            
+            <div>
+                <?= ($jogador != "" ? "<p>" . $jogador . ", você acertou " . $pontuacao . " perguntas</p>" : "") ?>
+            </div>
+            
+            
             <h2>Melhores Jogadores</h2>
             
             <table class="table">
@@ -61,9 +70,15 @@
                     </tr>
                     <?php  endforeach; ?>
                 </tbody>
-            </table>                
-
+            </table>      
+            <div class="row">
+                <a href="index.php" class="col-md-4 offset-md-4">
+                    <div class="botaoLink"><span>Ínicio</span></div>
+                </a>
+            </div>
         </div>
+        
+        
 
         
 

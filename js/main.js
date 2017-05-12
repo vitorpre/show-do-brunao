@@ -67,11 +67,7 @@ $(document).ready(function(){
 
 		$("#enviarResposta").submit();
 
-	});
-
-        var easter_egg = new Konami(function() { $('#modalEasterEgg').modal('show');});
-
-	
+	});	
 
 
 });

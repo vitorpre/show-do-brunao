@@ -28,7 +28,7 @@ class JogadorDAO
                     . "'" . $objJogador->getPontuacao() . "'"
                 . ");");
         
-        return $objStatement->execute();
+        return $objStatement;
         
     }
     
